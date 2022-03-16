@@ -11,6 +11,10 @@ const Styles = {
     justify-content: center;
     align-items: center;
   `,
+  OrderTextWrapper: styled.View`
+    align-items: center;
+    margin-top: 20px;
+  `,
 };
 
 export default Styles;
