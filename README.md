@@ -3,6 +3,8 @@
 This is a React Native package designed specifically to take advantage of the new React Native Reanimated 2 library. As a result, this package enables silky smooth gesture based animations that are capable of running at 60fps, even on an Android emulator running in debug mode. As a result, the performance of this package is substantially better than most other draggable grid packages available at the moment.
 
 React Native Reanimated 2 offloads animations to the UI thread (as opposed to the JavaScript thread), which means the code for this package is written in a slightly different way than usual, to make use of worklets. Fortunately React Native Reanimated 2 allows us to write code in a more declarative way, and so the code is much more stylistically similar to typical React code.
+ 
+ <img src="/example/gif.gif" height="650" alt="Example gif">
 
 ## React Native Drag to Sort Grid - API
 
