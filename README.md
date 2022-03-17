@@ -34,7 +34,8 @@ Once imported, the `DraggableGrid` takes the following props, and can use generi
 ## Recommended usage
 
 Whenever an element is deleted from the data array, the `DraggableGrid` component should be unmounted and then re-mounted, with a new `initialOrder` passed as a prop. This is so that the internal order SharedValue can be reinitialised correctly.
-The justification for this design decision is that if this were to be attempted using a `useEffect` inside the `DraggableGrid` component then this update would be a few frames out of sync, resulting in janky visuals and potentially crashes depending on how this package is being used. This is caused by the animations taking place on the UI thread instead of the JavaScript thread.
+
+The justification for this design decision is that if this were to be attempted using a `useEffect` inside the `DraggableGrid` component then this update would be a few frames out of sync, resulting in janky visuals and potentially crashes depending on how this package is being used. This is a tradeoff of the animations taking place on the UI thread instead of the JavaScript thread.
 
 ## Running the example 
 1. Clone this repo
